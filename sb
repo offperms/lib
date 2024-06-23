@@ -1,6 +1,4 @@
---[[
-  UI lib made by Emplic
-]]
+
 
 -- / Locals
 local Workspace = game:GetService("Workspace")
@@ -77,7 +75,7 @@ end
 
 local library = {
     version = "2.0.2",
-    title = title or "Emplic " .. tostring(math.random(1,366)),
+    title = title or "NBLM " .. tostring(math.random(1,366)),
     fps = 0,
     rank = "private"
 }
@@ -199,7 +197,7 @@ function library:Watermark(text)
         end
     end
 
-    tetx = text or "Emplic v2"
+    tetx = text or "NBLM v2"
 
     local watermark = Instance.new("ScreenGui")
     local watermarkPadding = Instance.new("UIPadding")
@@ -323,7 +321,7 @@ function library:Watermark(text)
 
     local WatermarkFunctions = {}
     function WatermarkFunctions:AddWatermark(text)
-        tetx = text or "Emplic v2"
+        tetx = text or "NBLM v2"
 
         local edge = Instance.new("Frame")
         local edgeCorner = Instance.new("UICorner")
@@ -689,9 +687,9 @@ function library:Introduction()
     local bar = Instance.new("Frame")
     local barCorner = Instance.new("UICorner")
     local barLayout = Instance.new("UIListLayout")
-    local EmplicLogo = Instance.new("ImageLabel")
-    local KindaWareLogo = Instance.new("ImageLabel")
-    local Emplic = Instance.new("TextLabel")
+    local NBLMLogo = Instance.new("ImageLabel")
+    local NBLMLogo = Instance.new("ImageLabel")
+    local NBLM = Instance.new("TextLabel")
     local text = Instance.new("TextLabel")
     local pageLayout = Instance.new("UIListLayout")
     
@@ -747,40 +745,40 @@ function library:Introduction()
     barLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     barLayout.SortOrder = Enum.SortOrder.LayoutOrder
     
-    EmplicLogo.Name = "EmplicLogo"
-    EmplicLogo.Parent = background
-    EmplicLogo.AnchorPoint = Vector2.new(0.5, 0.5)
-    EmplicLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    EmplicLogo.BackgroundTransparency = 1.000
-    EmplicLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
-    EmplicLogo.Size = UDim2.new(0, 448, 0, 150)
-    EmplicLogo.Visible = true
-    EmplicLogo.Image = "http://www.roblox.com/asset/?id=9365068051"
-    EmplicLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
-    EmplicLogo.ImageTransparency = 1
+    NBLMLogo.Name = "NBLMLogo"
+    NBLMLogo.Parent = background
+    NBLMLogo.AnchorPoint = Vector2.new(0.5, 0.5)
+    NBLMLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    NBLMLogo.BackgroundTransparency = 1.000
+    NBLMLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
+    NBLMLogo.Size = UDim2.new(0, 448, 0, 150)
+    NBLMLogo.Visible = true
+    NBLMLogo.Image = "http://www.roblox.com/asset/?id=9365068051"
+    NBLMLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
+    NBLMLogo.ImageTransparency = 1
     
-    KindaWareLogo.Name = "KindaWareLogo"
-    KindaWareLogo.Parent = background
-    KindaWareLogo.AnchorPoint = Vector2.new(0.5, 0.5)
-    KindaWareLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    KindaWareLogo.BackgroundTransparency = 1.000
-    KindaWareLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
-    KindaWareLogo.Size = UDim2.new(0, 150, 0, 150)
-    KindaWareLogo.Visible = true
-    KindaWareLogo.Image = "http://www.roblox.com/asset/?id=9365069861"
-    KindaWareLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
-    KindaWareLogo.ImageTransparency = 1
+    NBLMLogo.Name = "NBLMLogo"
+    NBLMLogo.Parent = background
+    NBLMLogo.AnchorPoint = Vector2.new(0.5, 0.5)
+    NBLMLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    NBLMLogo.BackgroundTransparency = 1.000
+    NBLMLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
+    NBLMLogo.Size = UDim2.new(0, 150, 0, 150)
+    NBLMLogo.Visible = true
+    NBLMLogo.Image = "http://www.roblox.com/asset/?id=9365069861"
+    NBLMLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
+    NBLMLogo.ImageTransparency = 1
     
-    Emplic.Name = "Emplic"
-    Emplic.Parent = background
-    Emplic.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    Emplic.BackgroundTransparency = 1.000
-    Emplic.Size = UDim2.new(0, 80, 0, 21)
-    Emplic.Font = Enum.Font.Code
-    Emplic.Text = "powered by Emplic"
-    Emplic.TextColor3 = Color3.fromRGB(124, 124, 124)
-    Emplic.TextSize = 10.000
-    Emplic.TextTransparency = 1
+    NBLM.Name = "NBLM"
+    NBLM.Parent = background
+    NBLM.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    NBLM.BackgroundTransparency = 1.000
+    NBLM.Size = UDim2.new(0, 80, 0, 21)
+    NBLM.Font = Enum.Font.Code
+    NBLM.Text = "powered by NBLM"
+    NBLM.TextColor3 = Color3.fromRGB(124, 124, 124)
+    NBLM.TextSize = 10.000
+    NBLM.TextTransparency = 1
     
     text.Name = "text"
     text.Parent = background
@@ -789,7 +787,7 @@ function library:Introduction()
     text.Position = UDim2.new(0.912751675, 0, 0, 0)
     text.Size = UDim2.new(0, 26, 0, 21)
     text.Font = Enum.Font.Code
-    text.Text = "KindaWare"
+    text.Text = "NBLM"
     text.TextColor3 = Color3.fromRGB(124, 124, 124)
     text.TextSize = 10.000
     text.TextTransparency = 1
@@ -801,12 +799,12 @@ function library:Introduction()
     pageLayout.SortOrder = Enum.SortOrder.LayoutOrder
     pageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
 
-    CreateTween("EmplicRotation", 0)
+    CreateTween("NBLMRotation", 0)
     local MinusAmount = -16
     coroutine.wrap(function()
         while wait() do
             MinusAmount = MinusAmount + 0.4
-            TweenService:Create(EmplicLogo, TweenTable["EmplicRotation"], {Rotation = EmplicLogo.Rotation - MinusAmount}):Play()
+            TweenService:Create(NBLMLogo, TweenTable["NBLMRotation"], {Rotation = NBLMLogo.Rotation - MinusAmount}):Play()
         end
     end)()
 
@@ -815,20 +813,20 @@ function library:Introduction()
     wait(.2)
     TweenService:Create(bar, TweenTable["introduction"], {Size = UDim2.new(0, 298, 0, 1)}):Play()
     wait(.2)
-    TweenService:Create(Emplic, TweenTable["introduction"], {TextTransparency = 0}):Play()
+    TweenService:Create(NBLM, TweenTable["introduction"], {TextTransparency = 0}):Play()
     TweenService:Create(text, TweenTable["introduction"], {TextTransparency = 0}):Play()
     wait(.3)
-    TweenService:Create(EmplicLogo, TweenTable["introduction"], {ImageTransparency = 0}):Play()
+    TweenService:Create(NBLMLogo, TweenTable["introduction"], {ImageTransparency = 0}):Play()
     wait(2)
-    TweenService:Create(EmplicLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
+    TweenService:Create(NBLMLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
     wait(.2)
-    TweenService:Create(KindaWareLogo, TweenTable["introduction"], {ImageTransparency = 0}):Play()
+    TweenService:Create(NBLMLogo, TweenTable["introduction"], {ImageTransparency = 0}):Play()
     wait(2)
-    TweenService:Create(KindaWareLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
+    TweenService:Create(NBLMLogo, TweenTable["introduction"], {ImageTransparency = 1}):Play()
     wait(.1)
     TweenService:Create(text, TweenTable["introduction"], {TextTransparency = 1}):Play()
     wait(.1)
-    TweenService:Create(Emplic, TweenTable["introduction"], {TextTransparency = 1}):Play()
+    TweenService:Create(NBLM, TweenTable["introduction"], {TextTransparency = 1}):Play()
     wait(.1)
     TweenService:Create(bar, TweenTable["introduction"], {Size = UDim2.new(0, 0, 0, 1)}):Play()
     wait(.1)
